@@ -3,7 +3,6 @@ const express = require('express')
 
 const app = express()
 const port = process.env.PORT || 4000
-const hosṭname  = "http://localhost"
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
@@ -22,5 +21,5 @@ app.get('/justforfun', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${hosṭname}:${port}`)
+  console.log(`Example app listening on port ${port}`)
 })
